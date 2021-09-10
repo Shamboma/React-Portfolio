@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import downArrow from "../assests/DownArrow.svg";
+import downArrow from "../assests/DownArrow.png";
 
 const Home = () => {
   return (
