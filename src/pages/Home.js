@@ -1,18 +1,15 @@
-import Navbar from "../components/Navbar";
+import NavTop from "../components/NavTop";
 import { Link } from "react-router-dom";
-import downArrow from "../assests/DownArrow.png";
+import downArrow from "../assests/ArrowDownFancy.png";
+import Heading from "../components/Heading";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <h1>Austin O'Neill</h1>
-      <h1>Professional</h1>
-      <h1>Full Stack Developer</h1>
+      <NavTop />
+      <Heading title={"Austin O'Neill"} desc={"Fullstack Developer"} />
       <Link to={"/projects"}>
-        <button>
-          <img src={downArrow} alt={downArrow} />
-        </button>
+        <img src={downArrow} alt={downArrow} />
       </Link>
     </>
   );
