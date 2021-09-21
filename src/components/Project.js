@@ -3,25 +3,30 @@ import { useState } from "react";
 
 const Project = (props) => {
   const [showModal, setShowModal] = useState(false);
-  const handleOpenModal = () => {
+  const openModal = () => {
     setShowModal(true);
   };
-  const handleCloseModal = () => {
+
+  const closeModal = () => {
     setShowModal(false);
   };
+
   return (
     <>
-      <article onClick={handleOpenModal}>
-        <h1>{props.title}</h1>
-        <img src={props.src} alt={props.src} />
+      <article className={"Project"} onClick={openModal}>
+        <h2>{props.title}</h2>
+        <img src={props.src} alt={props.src} className={"Project-img"} />
       </article>
-      <Modal isOpen={showModal}>
+      <Modal isOpen={showModal} onRequestClose={closeModal} className={"Modal"}>
         <h1>{props.title}</h1>
         <h2>{props.desc}</h2>
-        <a href={props.git} target={"_blank"} rel="noopener noreferrer">
+        <a href={props.demo} target={"_blank"} rel="noopener noreferrer">
           Demo
         </a>
-        <button onClick={handleCloseModal}>Close</button>
+        <a href={props.git} target={"_blank"} rel="noopener noreferrer">
+          Git
+        </a>
+        <button onClick={closeModal}>Close</button>
       </Modal>
     </>
   );
