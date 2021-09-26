@@ -1,11 +1,6 @@
 const ContactForm = () => {
   return (
-    <form
-      className={"ContactForm"}
-      method="post"
-      netlify
-      netlify-honeypot="bot-field"
-    >
+    <form className={"ContactForm"} method="post" netlify>
       <input
         type={"text"}
         id={"name"}

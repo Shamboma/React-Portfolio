@@ -12,30 +12,35 @@ const Projects = () => {
     {
       title: "Portfolio",
       src: p1,
-      desc: "Learning I suck at CSS Learning I suck at CSS Learning I suck at CSS Learning I suck at CSS Learning I suck at CSS",
-      git: "Link*",
-      demo: "Link*",
+      desc:
+        "A over engineered portfolio! React is not needed for such a simple website, " +
+        "but any practise I can get with framework I will take. I am also trying to learn CSS without any framework so I can actually get a deep understanding of how CSS works. " +
+        "I'm having troubles wrapping my head around it, but I have a feeling it will be one of those things that will just click.",
+      git: "https://github.com/Shamboma/React-Portfolio",
+      demo: "https://austinoneill.ca",
     },
     {
       title: "Trading Terminal",
       src: p2,
-      desc: "DESC",
-      git: "Link*",
-      demo: "Link*",
+      desc:
+        "A trading terminal that consumes APIs from different exchanges to trade efficiently and store user’s preferences. " +
+        "This is my first react project and is and will be may favourite personal project as there is so much things I can add and learn.",
+      git: "https://github.com/Shamboma/React-TradingTerminal",
+      demo: "https://tradingterminal.netlify.app",
     },
     {
       title: "Coming Soon...",
-      src: "tt.png",
-      desc: "DESC",
-      git: "Link*",
-      demo: "Link*",
+      src: "ComingSoon",
+      desc: "The possibilities",
+      git: "",
+      demo: "",
     },
     {
       title: "Coming Soon...",
-      src: "tt.png",
-      desc: "DESC",
-      git: "Link*",
-      demo: "Link*",
+      src: "ComingSoon",
+      desc: "The possibilities",
+      git: "",
+      demo: "",
     },
   ]);
 

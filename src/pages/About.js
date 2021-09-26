@@ -2,17 +2,19 @@ import { useState } from "react";
 import Heading from "../components/Heading";
 import downArrow from "../assests/ArrowDownFancy.webp";
 import Nav from "../components/Nav";
-import resume from "../assests/CoverLetter.webp";
+import resume from "../assests/Resume.webp";
 import ArrowDownFancy from "../components/ArrowDownFancy";
 
 const About = () => {
   const [showPersonal, setShowPersonal] = useState(false);
   const personal = "Personal About";
   const perDecs =
-    "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah";
+    "A thing I learned from school was to always get something out, I need to focus my time on my trading terminal and applying for jobs. " +
+    "Hopefully I'll have this all done before a recruiter sees this site and it will be looking beautiful, but if not... Hey there";
   const professional = "Professional About";
   const proDesc =
-    "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah";
+    "Eager Fullstack Developer finishing Computer programming diploma at Algonquin College with 2 years experience " +
+    "developing Fullstack applications mainly with MERN stack in teams and independently using an Agile approach.";
 
   const changeHandler = () => {
     if (showPersonal === false) {
@@ -28,7 +30,7 @@ const About = () => {
         </div>
       </div>
       <div className={"row fill"}>
-        <div className={"col-6 center"}>
+        <div className={"col-6"}>
           <img src={resume} alt={resume} className={"Resume"} />
         </div>
         <div className={"col-6 center"}>
@@ -38,7 +40,12 @@ const About = () => {
             <Heading title={professional} desc={proDesc} />
           )}
           <div className={"row center"}>
-            <img onClick={changeHandler} src={downArrow} alt={downArrow} />
+            <img
+              onClick={changeHandler}
+              src={downArrow}
+              alt={downArrow}
+              className={"ArrowDownFancy"}
+            />
           </div>
         </div>
       </div>
